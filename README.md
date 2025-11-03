@@ -391,22 +391,6 @@ rgb_image = cv2.cvtColor(hsv_image, cv2.COLOR_HSV2RGB)
    - Temporary file handling
    - Automatic cleanup
 
-## 🔬 Studi Kasus & Hasil Penelitian
-
-### Penelitian Terdahulu
-
-1. **Zhang et al. (2019)** - "Dominant Color Extraction from Images Using K-means Clustering"
-   - K=5-7 menghasilkan keseimbangan terbaik antara akurasi dan interpretabilitas
-   - K-means efektif untuk ekstraksi warna dengan kompleksitas komputasi rendah
-
-2. **Rodriguez & Kim (2020)** - "Comparative Analysis of RGB and HSV Color Spaces"
-   - Transformasi ke HSV meningkatkan akurasi deteksi hingga 23%
-   - HSV lebih robust terhadap variasi pencahayaan kompleks
-
-3. **Lee et al. (2021)** - "Real-time Color Analysis System for Fashion Retail"
-   - Kombinasi K-means dan deep learning mencapai akurasi 89.7%
-   - Processing time rata-rata 0.8 detik per gambar
-
 ## 💡 Use Cases & Aplikasi
 
 ### 🎨 Desain Grafis
@@ -458,26 +442,6 @@ pip install --upgrade gradio pillow numpy scikit-learn
 # Solution: Pastikan koneksi internet stabil
 # Atau jalankan tanpa share=True untuk local only
 demo.launch(share=False)
-```
-
-## 📝 Struktur File Project
-
-```
-dominant-color-detection/
-│
-├── ProjekCV(K_Means).ipynb      # Main Jupyter Notebook
-├── ProjekCV(K_Means).py         # Python script version
-├── requirements.txt              # Dependencies
-├── README.md                     # Documentation
-│
-├── docs/                         # Documentation folder
-│   ├── Laporan_Project_CV.pdf   # Full report
-│   └── images/                   # Screenshots
-│
-└── examples/                     # Example images
-    ├── sample1.jpg
-    ├── sample2.png
-    └── sample3.bmp
 ```
 
 ## 🔧 Konfigurasi Advanced
